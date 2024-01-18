@@ -1,7 +1,10 @@
-import React from 'react'
-
+import React,{useEffect} from 'react'
+import Card from '../Components/Card'
 export default function Home() {
+  useEffect(()=>{
+    
+  })
   return (
-    <div>Home</div>
+        <Card/>
   )
 }
