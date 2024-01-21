@@ -9,7 +9,8 @@ import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import AppLayout from './Layout/AppLayout';
-export default function Router() {
+export default function App() {
+  console.log("Router")
   const router = createBrowserRouter([
     {
       path: "/",
