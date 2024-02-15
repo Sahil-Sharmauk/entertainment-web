@@ -5,6 +5,9 @@ export default function Home() {
     
   })
   return (
-        <Card/>
+    <div className='trending-highlights'>
+      {/* Hello */}
+      <Card/>
+    </div>
   )
 }
