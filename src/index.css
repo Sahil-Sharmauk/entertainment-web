@@ -76,6 +76,7 @@ body{
   display: flex;
   flex-direction: column;
   padding: 0 10rem 0 10rem;
+  gap:2rem;
 }
 .search-bar-container{
   display:flex;
@@ -188,3 +189,39 @@ body{
   font-size: 16px;
   font-weight: 530;
 }
+
+/*Trending highlight*/
+.trending-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+}
+.card-img-container{
+  border-radius: 8px;
+  /* border:1px solid white; */
+  width: 250px;
+  height: 220px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.card-img-container>img{
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-img-container>img:hover{
+  transition: transform 0.4s ease-out, opacity 0.2s ease; /* Changed duration to 0.2s */
+  transform: scale(1.1);
+}
+
+.card-detail-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+

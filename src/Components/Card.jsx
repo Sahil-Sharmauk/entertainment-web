@@ -20,6 +20,7 @@ export default function Card() {
 
   return (
     <>
+<<<<<<< HEAD
     {allData.lenght > 0 && 
       allData.map((ele)=>{
       <div style={{border:"1px solid white"}}>
@@ -27,10 +28,32 @@ export default function Card() {
       </div>
       })
     }
+=======
+      {allData.length > 0 && 
+        allData.map((ele)=>{
+          return(
+            <div className='card-container'>
+              <div className='card-img-container' >
+                <img src={`https://image.tmdb.org/t/p/original/${ele?.poster_path}`} alt="not found" ></img>
+              </div>
+              <div className='card-detail-container'>
+                  <span>{new Date(ele?.release_date).getFullYear()}</span>
+                  <span>{}</span>
+                  <span>{}</span>
+              </div>
+            </div>
+          )
+        })
+      }
+>>>>>>> 5553598b7b64ca9137d3774842f51c00d921f109
     </>
    
   )
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5553598b7b64ca9137d3774842f51c00d921f109
 // http GET  \
 //   Authorization:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjE4ZTVmMWE0N2M0M2VhODBkMDAwM2I2MjgzZjg5ZiIsInN1YiI6IjY1YTc4NDQ0Mzg3NjUxMDEyZDFhNDMzNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xtXl157Bw1MRu6qZmqWnMaBrDr4cRDaSP0zKcB3dGiI' \
 //   accept:application/json
