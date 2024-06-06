@@ -20,15 +20,6 @@ export default function Card() {
 
   return (
     <>
-<<<<<<< HEAD
-    {allData.lenght > 0 && 
-      allData.map((ele)=>{
-      <div style={{border:"1px solid white"}}>
-        <img src="" alt="not found" width={100} height={100}></img>
-      </div>
-      })
-    }
-=======
       {allData.length > 0 && 
         allData.map((ele)=>{
           return(
@@ -45,15 +36,10 @@ export default function Card() {
           )
         })
       }
->>>>>>> 5553598b7b64ca9137d3774842f51c00d921f109
     </>
    
   )
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 5553598b7b64ca9137d3774842f51c00d921f109
 // http GET  \
 //   Authorization:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjE4ZTVmMWE0N2M0M2VhODBkMDAwM2I2MjgzZjg5ZiIsInN1YiI6IjY1YTc4NDQ0Mzg3NjUxMDEyZDFhNDMzNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xtXl157Bw1MRu6qZmqWnMaBrDr4cRDaSP0zKcB3dGiI' \
 //   accept:application/json

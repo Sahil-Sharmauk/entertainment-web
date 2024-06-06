@@ -16,15 +16,9 @@ export default function LeftSideBar() {
         <div className='left-side-first sidebar-options'>
             <Link to='/'><Logo/></Link>
             <ul>
-<<<<<<< HEAD
-              <li className='sidebar-options'><NavLink to='/' activeclassname="active"><HomeIcon /></NavLink></li>
-              <li className='sidebar-options'><NavLink to='/movies' activeclassname="active"><MovieIcon/></NavLink></li>
-              <li className='sidebar-options'><NavLink to='/series' activeclassname="active"><SeriesIcon/></NavLink></li>
-=======
               <li className='sidebar-options'><NavLink to='/' ><HomeIcon /></NavLink></li>
               <li className='sidebar-options'><NavLink to='/movies' ><MovieIcon/></NavLink></li>
               <li className='sidebar-options'><NavLink to='/series' ><SeriesIcon/></NavLink></li>
->>>>>>> 5553598b7b64ca9137d3774842f51c00d921f109
             </ul>
         </div>
         <div className='left-side-second'>
