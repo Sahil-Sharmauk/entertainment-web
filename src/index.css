@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --body-bg: #10141e;
+  
+}
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--body-bg);
+  color: white;
+  /* padding: 3.2rem; */
+  /* font-size: 62.5%; */
+}
+
+.app-layout{
+  display: flex;
+  padding: 3.2rem;
+  gap: 2rem;
+  /* justify-content: space-evenly; */
+}
+.left-side-main{
+  width: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191f2e;
+  border-radius: 10px;
+  height: 80vh;
+}
+.left-side-first{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.left-side-first>ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.left-side-second{
+ margin-top: auto;
+ position: relative;
+}
+
+.profile-container {
+  background-color: #191f2e;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  padding: 20px;
+  top: -85px;
+  left: 85px;
+  border-radius: 9px;
+
+}
+.profile-btns{
+  padding: 6px;
+  width: 100px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.sidebar-options a.active svg path{
+  fill: white;
+}
+.main-layout{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 10rem 0 10rem; */
+  gap:2rem;
+}
+.search-bar-container{
+  display:flex;
+  gap: 10px;
+  
+}
+.search-bar-container>input{
+  font-size: 25px;
+  color: white;
+  width:100%;
+  background: var(--body-bg);
+  border: none;
+  outline: none;
+}
+.search-bar-container>input:focus{
+  border-bottom: 1px solid white;
+}
+
+
+/* Login Componet style */
+
+.register-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register-container{
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap:2rem;
+  background-color: #191f2e;
+}
+.register-inpt{
+  width: calc(100% - 20%);
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3px;
+  background-color: #191f2e !important;
+  height: 30px;
+  font-size: 16px;
+  color: white !important;
+  /* box-shadow: rgb(0 0 0) 0px 0px 0px 1000px inset; */
+}
+.register-inpt:focus{
+  width: calc(100%-30px);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3px;
+  /* box-shadow: rgb(0 0 0) 0px 0px 0px 1000px inset; */
+
+}
+.register-btn{
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 530;
+}
+
+/* Login style */
+
+.login-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-container{
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap:2rem;
+  background-color: #191f2e;
+}
+.login-inpt{
+  width: calc(100% - 20%);
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3px;
+  background-color: #191f2e !important;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  /* box-shadow: rgb(0 0 0) 0px 0px 0px 1000px inset; */
+}
+.login-inpt:focus{
+  width: calc(100%-30px);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3px;
+}
+.login-btn{
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 530;
+}
+
+/*Trending highlight*/
+.trending-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+}
+.card-img-container{
+  border-radius: 8px;
+  /* border:1px solid white; */
+  width: 250px;
+  height: 220px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.card-img-container>img{
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-img-container>img:hover{
+  transition: transform 0.4s ease-out, opacity 0.2s ease; /* Changed duration to 0.2s */
+  transform: scale(1.1);
+}
+
+.card-detail-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
